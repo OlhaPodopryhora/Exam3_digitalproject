@@ -1,0 +1,110 @@
+<section class="services" id="services">
+            <div class="container container--services">
+
+                <div class="services__point services__point--design">
+
+                    <div class="services__card services__card--design" onclick="flip1()">
+
+                        <div class="services__card-face">
+                            <svg class="services__icon">
+                                <use xlink:href="#icon-graphic"></use>
+                            </svg>
+                            <h4 class="services__tit">GRAPHIC DESIGN </h4>
+                            <p class="services__subtit">Cras mattis consectetur purus sit amet fermentum.Cras mattis consectetur purus sit amet fermentum.Cras mattis consectetur purus sit amet fermentum.</p>
+                        </div>
+
+                         <div class="services__card-back">
+                            <p class="services__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde suscipit quas quidem tempore neque, earum odit voluptatem porro. Sunt, in quam assumenda illum eius eos ut harum repellat suscipit cupiditate ipsa voluptatibu</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="services__point services__point--web">
+                     
+                    <div class="services__card services__card--web" onclick="flip2()">
+
+                        <div class="services__card-face">
+                            <svg class="services__icon">
+                                <use xlink:href="#icon-web"></use>
+                            </svg>
+                            <h4 class="services__tit">WEB DEVELOPMENT</h4>
+                            <p class="services__subtit">Cras mattis consectetur purus sit amet fermentum.</p>
+                        </div>
+
+                        <div class="services__card-back">
+                            <p class="services__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde suscipit quas quidem tempore neque, earum odit voluptatem porro. Sunt, in quam assumenda  voluptates fugiat, ullam illum nulla tempore voluptatibus aut ipsa eum nesciunt, blanditiis nisi animi fuga, qui dolorem.</p>
+                        </div>
+
+                    </div>
+
+                </div>    
+
+                <div class="services__point services__point--seo">
+                    <div class="services__card services__card--seo" onclick="flip3()">
+
+                        <div class="services__card-face">
+                            <svg class="services__icon">
+                                 <use xlink:href="#icon-SEO"></use>
+                            </svg>
+                            <h4 class="services__tit">SEO & MARKETING</h4>
+                            <p class="services__subtit">Cras mattis consectetur purus sit amet fermentum.</p>
+                        </div>
+
+                         <div class="services__card-back">
+                            <p class="services__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde suscipit quas quidem tempore neque, earum odit voluptatem porro. Sunt, in quam assumenda illum eius eos ut harum repellat suscipit cupiditate ipsa voluptatibus inventore alias esse exercitationem dolorem.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="services__point services__point--mob">
+                    <div class="services__card services__card--mobile" onclick="flip4()">
+
+                        <div class="services__card-face">
+                            <svg class="services__icon">
+                                <use xlink:href="#Icon-Mobile"></use>
+                            </svg>
+                            <h4 class="services__tit">MOBILE DEVELOPMENT</h4>
+                            <p class="services__subtit">Cras mattis consectetur purus sit amet fermentum.</p>
+                        </div>
+
+                         <div class="services__card-back">
+                            <p class="services__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde suscipit quas quidem tempore neque, earum odit voluptatem porro. Sunt, in quam assumenda illum eius eos ut harum repellat suscipit cupiditate ipsa voluptatibus inventore alias esse exercitationem dolorem debitis ducimus! Sit dolores nobis aliquam voluptates fugiat, ullam illum nulla tempore voluptatibus aut ipsa eum nesciunt, blanditiis nisi animi fuga, qui dolorem.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="services__point services__point--services" style="background: linear-gradient(rgba(159, 154, 207, .3),rgba(159, 154, 207, .7)), url(../img/services.jpg) no-repeat center; background-size: cover;">
+                    
+                    <svg class="services__icon">
+                        <use xlink:href="#icon-services"></use>
+                    </svg>
+                    
+                    <h4 class="services__tit services__tit--services">OUR services</h4>
+                    
+                    <blockquote class="services__subtit services__subtit--services">“Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.Nullam quis risus eget urna mollis ornare vel eu leo. ”</blockquote>
+
+                    <cite>- Borat -</cite>
+                </div>
+
+            </div>
+
+
+        <script>
+        function flip1() {
+            $('.services__card--design').toggleClass('flipped');
+        }; 
+        function flip2() {
+            $('.services__card--web').toggleClass('flipped');
+        };
+        function flip3() {
+            $('.services__card--seo').toggleClass('flipped');
+        };
+        function flip4() {
+            $('.services__card--mobile').toggleClass('flipped');
+        };
+        </script>
+        </section>

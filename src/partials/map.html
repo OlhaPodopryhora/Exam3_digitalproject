@@ -1,0 +1,52 @@
+<section class="contacts" id="contacts">
+    <div class="map" id="map">
+    </div> 
+
+     <div class="heading heading--contacts">
+        <svg class="heading__icon">
+            <use xlink:href="#Icon-contacts"></use>
+        </svg>
+        <h2 class="heading__tit">Get in Touch</h2>
+    </div>
+
+    <form action="POST" class="form">
+
+       <input class="form__input form__input--name" type="text" id="name" required>
+            <label class="form__label form__label--name" for="name">Your Name 
+                <span style="color: #9f9acf">&#42;</span>
+            </label>
+       
+       <input class="form__input form__input--email" type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <label class="form__label form__label--email" for="email">Your Email 
+                <span style="color: #9f9acf">&#42;</span>
+            </label>
+       
+       <textarea class="form__textarea" name="message" id="message" cols="30" rows="7"></textarea>
+            <label class="form__label form__label--textarea" for="message">Your Message <span style="color: #9f9acf">&#42;</span>
+            </label>
+
+        <button type="submit" class="form__btn">Send message</button>
+   
+    </form>
+
+    <a href="#" class="contacts__btn"></a>
+
+    <div class="contacts__address">
+        <div class="contacts__icon-box">
+            <svg class="contacts__icon">
+                <use xlink:href="#Icon-Address"></use>
+            </svg>
+        </div>  
+        <a href="https://www.google.com/maps/place/Jl.+Ikan+Piranha+Atas+No.220,+Tunjungsekar,+Kec.+Lowokwaru,+Kota+Malang,+Jawa+Timur+65142,+%D0%98%D0%BD%D0%B4%D0%BE%D0%BD%D0%B5%D0%B7%D0%B8%D1%8F/@-7.9307512,112.6355576,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd629edfe2a6fdd:0xb7aedf888119f98a!8m2!3d-7.9307512!4d112.6377463" target="_blank" class="contacts__info">Ikan Piranha Atas 220C Malang - East Java Indonesia</a>  
+    </div>
+
+    <div class="contacts__tel">
+        <div class="contacts__icon-box">
+            <svg class="contacts__icon">
+                <use xlink:href="#phone"></use>
+            </svg>
+        </div>
+        <a href="tel:+6281235966914" target="_blank" class="contacts__info">+6 281 235 96 69 14</a>
+    </div>
+
+</section> 
