@@ -3017,12 +3017,29 @@ $(document).ready(function(){
 
 		$(window).scroll(function() {    
 	    var scroll = $(window).scrollTop();
-	    if (scroll >= 300) {
-	        $(".nav").addClass("scrolling");
-	    } else {
-	        $(".nav").removeClass("scrolling");
-	    }
-	});
+		    if (scroll >= 200) {
+		        $(".nav").addClass("scrolling");
+		    } else {
+		        $(".nav").removeClass("scrolling");
+		    }
+		});
+
+		$(function(){
+			$('.burger').on('click', function(){
+				$('.burger__links').slideToggle(200, function(){
+					if($(this).css('display') === 'none'){
+						$(this).removeAttr('style');
+				}
+			});
+		 });
+		});
+
+		$(function(){
+			$('.card').on('click', function(){
+				$(this).toggleClass('flipped');
+			});
+		});
+		
 
 		$('.slider-works').slick({
 	      dots: true,
@@ -3110,12 +3127,5 @@ function initMap() {
 	});  
 
 
-	$(window).scroll(function() {    
-	    var scroll = $(window).scrollTop();
-	    if (scroll >= 200) {
-	        $(".nav").addClass("scrolling");
-	    } else {
-	        $(".nav").removeClass("scrolling");
-	    }
-	});
+	
 }
